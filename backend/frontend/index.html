@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Enterprise AI Assistant</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <div class="logo">
+            <div class="logo-icon">AI</div>
+
+            <div>
+                <h2>Enterprise AI</h2>
+                <p>Knowledge Assistant</p>
+            </div>
+        </div>
+
+        <nav class="navigation">
+
+            <button class="menu-item active">
+                <span>💬</span>
+                AI Chat
+            </button>
+
+            <button class="menu-item">
+                <span>📚</span>
+                Knowledge Base
+            </button>
+
+            <button class="menu-item">
+                <span>📁</span>
+                Projects
+            </button>
+
+            <button class="menu-item">
+                <span>🕘</span>
+                History
+            </button>
+
+            <button class="menu-item">
+                <span>⚙️</span>
+                Settings
+            </button>
+
+        </nav>
+
+        <div class="sidebar-bottom">
+            <div class="status-dot"></div>
+            <span>System Ready</span>
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN CONTENT -->
+    <main class="main">
+
+        <!-- HEADER -->
+        <header class="header">
+
+            <div>
+                <h1>AI Knowledge Assistant</h1>
+                <p>Ask questions from your enterprise knowledge base</p>
+            </div>
+
+            <div class="header-status">
+                <span class="green-dot"></span>
+                RAG Assistant
+            </div>
+
+        </header>
+
+
+        <!-- PROJECT SELECTOR -->
+        <section class="project-section">
+
+            <label for="projectSelect">
+                Select Project
+            </label>
+
+            <select id="projectSelect">
+
+                <option value="school">
+                    🏫 School Management System
+                </option>
+
+                <option value="healthcare">
+                    🏥 Healthcare
+                </option>
+
+            </select>
+
+        </section>
+
+
+        <!-- WELCOME -->
+        <section class="welcome-card">
+
+            <div class="welcome-icon">
+                ✨
+            </div>
+
+            <div>
+                <h2>Welcome to Enterprise AI Assistant</h2>
+
+                <p>
+                    Ask a question and the AI will search the
+                    knowledge base using RAG.
+                </p>
+            </div>
+
+        </section>
+
+
+        <!-- QUICK QUESTIONS -->
+        <section class="quick-section">
+
+            <h3>Quick Questions</h3>
+
+            <div class="quick-buttons">
+
+                <button class="quick-question">
+                    Who can record student attendance?
+                </button>
+
+                <button class="quick-question">
+                    What is the attendance procedure?
+                </button>
+
+                <button class="quick-question">
+                    Who manages student records?
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- CHAT -->
+        <section class="chat-card">
+
+            <div class="chat-header">
+                <div>
+                    <h3>Conversation</h3>
+                    <span>Connected to FastAPI + RAG</span>
+                </div>
+            </div>
+
+
+            <!-- MESSAGES -->
+            <div id="chatMessages" class="chat-messages">
+
+                <div class="empty-chat">
+
+                    <div class="empty-icon">
+                        🤖
+                    </div>
+
+                    <h3>Start a conversation</h3>
+
+                    <p>
+                        Ask something about the selected project.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- INPUT -->
+            <div class="input-area">
+
+                <input
+                    type="text"
+                    id="questionInput"
+                    placeholder="Type your question here..."
+                    autocomplete="off"
+                >
+
+                <button
+                    id="sendButton"
+                    type="button"
+                >
+                    <span>➤</span>
+                    Send
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

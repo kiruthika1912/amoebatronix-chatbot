@@ -1,0 +1,74 @@
+AMOEBATRONIX - SERVICES
+
+AmoebaTronix provides professional IT and technology services designed to
+support business operations, digital transformation, software development,
+cloud infrastructure, and technical requirements.
+
+1. IT SERVICES
+
+AmoebaTronix provides IT solutions and technical support for organizations.
+Services can include technology consulting, system support, software-related
+services, and business technology solutions.
+
+2. CUSTOM SOFTWARE DEVELOPMENT
+
+AmoebaTronix develops custom software solutions based on business requirements.
+
+Custom software can be designed to:
+- Automate business processes
+- Improve operational efficiency
+- Support business workflows
+- Integrate different systems
+- Provide customized functionality
+
+3. WEB DEVELOPMENT
+
+AmoebaTronix provides web development solutions for organizations that need
+business websites and web-based applications.
+
+4. MOBILE APPLICATION DEVELOPMENT
+
+AmoebaTronix provides mobile application development services for businesses
+that require mobile-based solutions.
+
+5. API INTEGRATION
+
+AmoebaTronix provides API integration services to connect software systems,
+applications, and external services.
+
+API integration can help applications exchange data and work together.
+
+6. UI/UX DESIGN
+
+AmoebaTronix provides UI/UX design solutions focused on creating usable,
+clear, and professional digital interfaces.
+
+7. CLOUD SERVICES
+
+AmoebaTronix provides cloud-related solutions including business email,
+cloud file storage, virtual cloud infrastructure, and collaborative cloud
+environments.
+
+8. TECHNICAL SUPPORT
+
+AmoebaTronix provides technical support related to its software, IT services,
+cloud solutions, products, and technology solutions.
+
+9. CYBERSECURITY
+
+AmoebaTronix provides technology and security-related solutions to help
+organizations protect systems, applications, and business information.
+
+10. SOFTWARE LICENSING
+
+AmoebaTronix provides genuine software licensing solutions for organizations
+that require legitimate software products and licenses.
+
+11. EVENT SERVICES
+
+AmoebaTronix also provides professional event-related services including
+event staging, media production, and event support.
+
+IMPORTANT:
+The chatbot should answer only using information available in the Knowledge
+Base and should not invent unsupported services or features.

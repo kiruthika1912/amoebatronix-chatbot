@@ -1,0 +1,151 @@
+AMOEBATRONIX - PRODUCTS
+
+AmoebaTronix provides IT hardware products and infrastructure solutions
+for business and organizational requirements.
+
+
+==================================================
+PRODUCT GROUP 1 - SERVERS
+==================================================
+
+Product Category:
+Servers
+
+Description:
+AmoebaTronix provides server solutions for business IT infrastructure
+and organizational computing requirements.
+
+Server solutions can support:
+- Business applications
+- Data storage
+- Centralized services
+- IT infrastructure
+- Organizational workloads
+
+Related Products:
+- Servers
+- Server RAM
+
+
+==================================================
+PRODUCT GROUP 2 - BUSINESS COMPUTERS AND WORKSTATIONS
+==================================================
+
+Product Category:
+Business Computers and Workstations
+
+Description:
+AmoebaTronix provides computing products for business users and
+professional work environments.
+
+Products include:
+- Workstations
+- Business laptops
+- Motherboards
+- Graphics cards
+
+These products can be selected according to business requirements,
+applications, users, and workload.
+
+
+==================================================
+PRODUCT GROUP 3 - NETWORKING PRODUCTS
+==================================================
+
+Product Category:
+Networking Products
+
+Description:
+AmoebaTronix provides networking products and infrastructure components
+for business network environments.
+
+Products include:
+- Network switches
+- Enterprise routers
+- Wi-Fi access points
+- Firewalls
+- VPN-capable security solutions
+- Network cabling
+
+Networking products can support business connectivity, network
+infrastructure, and secure communication.
+
+
+==================================================
+PRODUCT GROUP 4 - POWER AND STORAGE PRODUCTS
+==================================================
+
+Product Category:
+Power and Storage Products
+
+Description:
+AmoebaTronix provides products that support business computing,
+power protection, and data storage requirements.
+
+Products include:
+- UPS systems
+- NVMe storage
+- Server RAM
+
+These products can support system reliability, storage requirements,
+and computing infrastructure.
+
+
+==================================================
+PRODUCT GROUP 5 - SECURITY AND INFRASTRUCTURE PRODUCTS
+==================================================
+
+Product Category:
+Security and Infrastructure Products
+
+Description:
+AmoebaTronix provides security and infrastructure products for
+business IT environments.
+
+Products include:
+- Hardware firewalls
+- VPN solutions
+- CCTV solutions
+- Structured cabling
+- Network infrastructure equipment
+
+These products can support network security, surveillance, connectivity,
+and IT infrastructure requirements.
+
+
+==================================================
+PRODUCT SELECTION SUPPORT
+==================================================
+
+AmoebaTronix can help customers choose suitable hardware based on
+their business requirements.
+
+Customers may provide:
+- Business requirements
+- Number of users
+- Applications being used
+- Infrastructure requirements
+- Budget
+
+The appropriate products can then be recommended according to the
+customer's requirements.
+
+
+==================================================
+IMPORTANT INFORMATION
+==================================================
+
+The chatbot must only provide product information available in the
+Knowledge Base.
+
+The chatbot must not invent:
+- Product names
+- Product models
+- Prices
+- Specifications
+- Availability
+- Warranty information
+
+If a specific product model, price, or specification is not available
+in the Knowledge Base, the chatbot should tell the customer that the
+specific information is not currently available.

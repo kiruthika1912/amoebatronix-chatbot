@@ -1,0 +1,117 @@
+AMOEBATRONIX - FREQUENTLY ASKED QUESTIONS
+
+Q1. What does AmoebaTronix do?
+
+A:
+AmoebaTronix provides IT services, custom software solutions, cloud
+solutions, enterprise products, genuine software licensing, event staging,
+media production, and event support.
+
+
+Q2. What services does AmoebaTronix provide?
+
+A:
+AmoebaTronix provides IT services, custom software development, web
+development, mobile application development, API integration, UI/UX design,
+cloud solutions, technical support, cybersecurity-related solutions,
+software licensing, and event services.
+
+
+Q3. Does AmoebaTronix provide custom software development?
+
+A:
+Yes. AmoebaTronix provides custom software development based on business
+requirements.
+
+
+Q4. Does AmoebaTronix provide cloud solutions?
+
+A:
+Yes. AmoebaTronix provides cloud solutions including business email,
+cloud file storage, virtual cloud infrastructure, Google Workspace setup
+and migration, Microsoft Azure Virtual Machines, and hybrid cloud security
+and backup.
+
+
+Q5. Does AmoebaTronix provide Google Workspace services?
+
+A:
+Yes. AmoebaTronix provides Google Workspace setup and migration services.
+
+
+Q6. Does AmoebaTronix provide Microsoft Azure services?
+
+A:
+Yes. AmoebaTronix provides Microsoft Azure Virtual Machine solutions.
+
+
+Q7. Does AmoebaTronix provide cloud backup?
+
+A:
+Yes. AmoebaTronix provides hybrid cloud security and backup solutions.
+
+
+Q8. Does AmoebaTronix provide software licensing?
+
+A:
+Yes. AmoebaTronix provides genuine software licensing solutions.
+
+
+Q9. Does AmoebaTronix provide technical support?
+
+A:
+Yes. AmoebaTronix provides technical support related to its IT services,
+software solutions, cloud solutions, products, and technology solutions.
+
+
+Q10. Does AmoebaTronix provide event services?
+
+A:
+Yes. AmoebaTronix provides professional event services including event
+staging, media production, and event support.
+
+
+Q11. Can AmoebaTronix develop web applications?
+
+A:
+Yes. AmoebaTronix provides web development solutions for organizations.
+
+
+Q12. Can AmoebaTronix develop mobile applications?
+
+A:
+Yes. AmoebaTronix provides mobile application development services.
+
+
+Q13. Does AmoebaTronix provide API integration?
+
+A:
+Yes. AmoebaTronix provides API integration services for connecting
+applications and software systems.
+
+
+Q14. Does AmoebaTronix provide UI/UX design?
+
+A:
+Yes. AmoebaTronix provides UI/UX design solutions for digital interfaces.
+
+
+Q15. Where is AmoebaTronix located?
+
+A:
+The chatbot should provide the company's confirmed location from the
+company Knowledge Base. If the location is not available in the Knowledge
+Base, the chatbot should not invent an address.
+
+
+Q16. How can I get support from AmoebaTronix?
+
+A:
+Customers can use the available AmoebaTronix support/contact channels
+provided in the company Knowledge Base.
+
+
+IMPORTANT:
+If a question cannot be answered using the Knowledge Base, the chatbot
+should clearly say that the required information is not available rather
+than generating an unsupported answer.

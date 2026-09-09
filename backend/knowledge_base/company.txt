@@ -1,0 +1,205 @@
+AMOEBATRONIX - COMPANY INFORMATION
+
+COMPANY NAME
+
+AmoebaTronix
+
+
+ABOUT AMOEBATRONIX
+
+AmoebaTronix is a technology and IT solutions company that provides
+professional digital and business technology solutions for organizations.
+
+The company focuses on IT services, custom software development, cloud
+solutions, enterprise products, genuine software licensing, and professional
+event-related services.
+
+
+CORE AREAS
+
+AmoebaTronix provides solutions in the following areas:
+
+- IT Services
+- Custom Software Development
+- Web Development
+- Mobile Application Development
+- Cloud Solutions
+- API Integration
+- UI/UX Design
+- Enterprise Products
+- Software Licensing
+- Technical Support
+- Cybersecurity Solutions
+- Event Services
+- Media Production
+- Event Support
+
+
+IT SERVICES
+
+AmoebaTronix provides IT solutions and technical services to help businesses
+manage their technology requirements.
+
+The IT services can support software, applications, infrastructure,
+business technology, and technical requirements.
+
+
+CUSTOM SOFTWARE DEVELOPMENT
+
+AmoebaTronix develops custom software solutions according to the specific
+requirements of businesses and organizations.
+
+Custom software solutions can help businesses:
+
+- Automate business processes
+- Improve operational efficiency
+- Manage business workflows
+- Integrate different systems
+- Develop customized applications
+- Support organization-specific requirements
+
+
+WEB DEVELOPMENT
+
+AmoebaTronix provides web development services for businesses and
+organizations.
+
+Web solutions can include business websites and web-based applications
+developed according to customer requirements.
+
+
+MOBILE APPLICATION DEVELOPMENT
+
+AmoebaTronix provides mobile application development services for
+organizations that require mobile-based digital solutions.
+
+
+API INTEGRATION
+
+AmoebaTronix provides API integration services that allow different
+applications and software systems to communicate and exchange data.
+
+
+UI/UX DESIGN
+
+AmoebaTronix provides UI/UX design solutions for creating clear,
+user-friendly, and professional digital interfaces.
+
+
+CLOUD SOLUTIONS
+
+AmoebaTronix provides scalable cloud solutions for business organizations.
+
+Cloud-related solutions include:
+
+- Business Email
+- Cloud File Storage
+- Virtual Cloud Infrastructure
+- Google Workspace Setup and Migration
+- Microsoft Azure Virtual Machines
+- Hybrid Cloud Security and Backup
+- Collaborative Google and Microsoft cloud environments
+
+
+ENTERPRISE PRODUCTS
+
+AmoebaTronix provides enterprise technology products and solutions designed
+to support business and organizational requirements.
+
+Specific product information is maintained separately in the products
+Knowledge Base file.
+
+
+SOFTWARE LICENSING
+
+AmoebaTronix provides genuine software licensing solutions for organizations
+that require legitimate software products and licenses.
+
+
+TECHNICAL SUPPORT
+
+AmoebaTronix provides technical support related to its IT services,
+software solutions, cloud solutions, products, and technology solutions.
+
+
+CYBERSECURITY
+
+AmoebaTronix provides technology and security-related solutions that can
+support organizations in protecting their systems, applications, and
+business information.
+
+
+EVENT SERVICES
+
+AmoebaTronix also provides professional event-related services.
+
+Event-related services include:
+
+- Event Staging
+- Media Production
+- Event Support
+
+
+CLOUD PRODUCTIVITY
+
+AmoebaTronix supports collaborative Google and Microsoft cloud environments
+for business organizations.
+
+This includes services related to Google Workspace and Microsoft Azure.
+
+
+CUSTOMER SUPPORT
+
+Customers can contact AmoebaTronix through the official support and contact
+channels provided by the company.
+
+The chatbot should provide contact details only when those details are
+available in the Knowledge Base.
+
+
+LOCATION
+
+The chatbot should provide the confirmed company location from the
+Knowledge Base.
+
+If the exact location is not available in the Knowledge Base, the chatbot
+must not create or guess an address.
+
+
+BUSINESS INFORMATION POLICY
+
+The Smart Support chatbot must answer company-related questions using
+information available in the Knowledge Base.
+
+The chatbot must not:
+
+- Invent company information
+- Invent product names
+- Invent prices
+- Invent addresses
+- Invent phone numbers
+- Invent email addresses
+- Invent business hours
+- Claim services that are not present in the Knowledge Base
+
+If the requested information is not available, the chatbot should clearly
+inform the customer that the information is not available in the current
+Knowledge Base.
+
+
+KNOWLEDGE BASE REFERENCE
+
+Company information:
+company.txt
+
+Service information:
+services.txt
+
+Product information:
+products.txt
+
+Cloud information:
+cloud_solutions.txt
+
+Frequently asked questions:
+faq.txt
