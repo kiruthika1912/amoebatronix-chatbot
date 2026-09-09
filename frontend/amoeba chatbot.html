@@ -2972,195 +2972,77 @@
 
 
 
-        function showAnswer(question) {
+        async function showAnswer(question) {
 
-
-
-
-
-            /*
-
-                REMOVE THE PREVIOUS
-
-                QUESTION AND ANSWER
-
-            */
-
-
-
+            /* REMOVE THE PREVIOUS QUESTION AND ANSWER */
             messages.innerHTML = "";
 
-
-
-
-
-
-
             /* USER QUESTION */
-
-
-
-            const userMessage =
-
-                document.createElement("div");
-
-
-
-
-
-            userMessage.className =
-
-                "user-message";
-
-
-
-
-
-            userMessage.textContent =
-
-                question;
-
-
-
-
-
-
+            const userMessage = document.createElement("div");
+            userMessage.className = "user-message";
+            userMessage.textContent = question;
 
             /* BOT ANSWER */
+            const botMessage = document.createElement("div");
+            botMessage.className = "bot-message";
 
+            const label = document.createElement("span");
+            label.className = "answer-label";
+            label.textContent = "AmoebaTronix Assistant";
+            botMessage.appendChild(label);
 
-
-            const botMessage =
-
-                document.createElement("div");
-
-
-
-
-
-            botMessage.className =
-
-                "bot-message";
-
-
-
-
-
-
-
-            const label =
-
-                document.createElement("span");
-
-
-
-
-
-            label.className =
-
-                "answer-label";
-
-
-
-
-
-            label.textContent =
-
-                "AmoebaTronix Assistant";
-
-
-
-
-
-
-
-            botMessage.appendChild(
-
-                label
-
-            );
-
-
-
-
-
-            botMessage.appendChild(
-
-                document.createTextNode(
-
-                    findAnswer(question)
-
-                )
-
-            );
-
-
-
-
-
-
+            const contentNode = document.createElement("div");
+            contentNode.className = "answer-text";
+            contentNode.textContent = "Searching knowledge base...";
+            botMessage.appendChild(contentNode);
 
             /* ADD TO CHAT */
+            messages.appendChild(userMessage);
+            messages.appendChild(botMessage);
 
+            /* SCROLL */
+            chatBody.scrollTo({
+                top: chatBody.scrollHeight,
+                behavior: "smooth"
+            });
 
+            /* FETCH REAL ANSWER FROM FASTAPI RAG BACKEND */
+            try {
+                const apiUrl = window.location.origin.startsWith("http")
+                    ? `${window.location.origin}/ask`
+                    : "http://127.0.0.1:8000/ask";
 
-            messages.appendChild(
+                const response = await fetch(apiUrl, {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify({ question: question })
+                });
 
-                userMessage
+                if (response.ok) {
+                    const data = await response.json();
+                    if (data && data.answer) {
+                        contentNode.textContent = data.answer;
+                    } else {
+                        contentNode.textContent = findAnswer(question);
+                    }
+                } else {
+                    contentNode.textContent = findAnswer(question);
+                }
+            } catch (err) {
+                console.warn("Backend not reached, using offline fallback:", err);
+                contentNode.textContent = findAnswer(question);
+            }
 
-            );
-
-
-
-
-
-            messages.appendChild(
-
-                botMessage
-
-            );
-
-
-
-
-
-
-
-            /* SCROLL TO LATEST ANSWER */
-
-
-
-            setTimeout(
-
-                function () {
-
-
-
-                    chatBody.scrollTo({
-
-                        top: chatBody.scrollHeight,
-
-                        behavior: "smooth"
-
-                    });
-
-
-
-                },
-
-                100
-
-            );
-
-
+            setTimeout(function () {
+                chatBody.scrollTo({
+                    top: chatBody.scrollHeight,
+                    behavior: "smooth"
+                });
+            }, 100);
 
         }
-
-
-
-
-
-
 
         /* =================================
 

@@ -1,9 +1,15 @@
+from pathlib import Path
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 
 from rag import get_context
+from answer_generator import generate_answer
 
+# Paths
+BASE_DIR = Path(__file__).resolve().parent
+FRONTEND_DIR = BASE_DIR.parent / "frontend"
 
 app = FastAPI(
     title="AmoebaTronix Smart Support API",
@@ -33,24 +39,14 @@ class QuestionRequest(BaseModel):
 
 
 # -----------------------------
-# Home
-# -----------------------------
-
-@app.get("/")
-def home():
-    return {
-        "message": "AmoebaTronix Smart Support API is running"
-    }
-
-
-# -----------------------------
 # Health Check
 # -----------------------------
 
 @app.get("/health")
 def health():
     return {
-        "status": "healthy"
+        "status": "healthy",
+        "service": "AmoebaTronix Smart Support API"
     }
 
 
@@ -75,17 +71,30 @@ def ask_question(request: QuestionRequest):
             "answer": (
                 "I couldn't find relevant information in the "
                 "AmoebaTronix knowledge base."
-            )
+            ),
+            "results": []
         }
 
-    # Temporary RAG response
-    answer = (
-        "Here is the relevant information from the "
-        "AmoebaTronix knowledge base:\n\n"
-        + context
-    )
+    # Generate grounded answer from retrieved context
+    answer = generate_answer(question, context)
+
+    # Fallback to context if generator returns empty
+    if not answer:
+        answer = context
 
     return {
         "answer": answer,
         "results": results
     }
+
+
+# -----------------------------
+# Serve Frontend Static Files
+# -----------------------------
+
+if FRONTEND_DIR.exists():
+    app.mount(
+        "/",
+        StaticFiles(directory=str(FRONTEND_DIR), html=True),
+        name="frontend"
+    )

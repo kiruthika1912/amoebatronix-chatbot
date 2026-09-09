@@ -19,8 +19,10 @@ const menuItems =
     document.querySelectorAll(".menu-item");
 
 
-// FastAPI backend
-const API_URL = "http://127.0.0.1:8000/ask";
+// FastAPI backend URL (works whether hosted together or separately)
+const API_URL = window.location.origin.startsWith("http")
+    ? `${window.location.origin}/ask`
+    : "http://127.0.0.1:8000/ask";
 
 
 // =====================================================
