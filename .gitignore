@@ -1,0 +1,33 @@
+# Python Virtual Environments
+venv/
+.venv/
+env/
+backend/venv/
+backend/.venv/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# FAISS and Model Caches
+*.faiss
+.cache/
+huggingface/
+
+# Environment Variables
+.env
+.env.local
+.env.*.local
+
+# OS Artifacts
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE & Editor files
+.vscode/
+.idea/
+*.suo
+*.user
+*.sublime-workspace

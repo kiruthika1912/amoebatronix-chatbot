@@ -1,0 +1,3249 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+    <title>AmoebaTronix | Smart Support</title>
+
+
+
+    <style>
+
+
+
+        /* ================================
+
+           AMOEBATRONIX BRAND COLORS
+
+        ================================= */
+
+
+
+        :root {
+
+            --green: #8dcc18;
+
+            --green-light: #a6df19;
+
+            --green-dark: #6fa900;
+
+            --green-soft: #f2f9df;
+
+
+
+            --white: #ffffff;
+
+            --dark: #111820;
+
+            --text: #29445a;
+
+            --muted: #71808d;
+
+
+
+            --border: #dce8c5;
+
+        }
+
+
+
+
+
+        * {
+
+            box-sizing: border-box;
+
+        }
+
+
+
+
+
+        body {
+
+            margin: 0;
+
+            min-height: 100vh;
+
+
+
+            font-family:
+
+                Arial,
+
+                Helvetica,
+
+                sans-serif;
+
+
+
+            color: var(--dark);
+
+
+
+            background:
+
+                radial-gradient(
+
+                    circle at 78% 20%,
+
+                    rgba(166, 223, 25, 0.16),
+
+                    transparent 32%
+
+                ),
+
+
+
+                linear-gradient(
+
+                    135deg,
+
+                    #ffffff 0%,
+
+                    #fbfdf6 50%,
+
+                    #f0f8df 100%
+
+                );
+
+
+
+            overflow: hidden;
+
+        }
+
+
+
+
+
+        /* ================================
+
+           MAIN WEBSITE AREA
+
+        ================================= */
+
+
+
+        .hero {
+
+            min-height: 100vh;
+
+
+
+            padding: 60px 8vw;
+
+
+
+            display: flex;
+
+            align-items: center;
+
+        }
+
+
+
+
+
+        .hero-content {
+
+            max-width: 720px;
+
+        }
+
+
+
+
+
+        .brand-line {
+
+            margin-bottom: 22px;
+
+
+
+            color: var(--green-dark);
+
+
+
+            font-size: 13px;
+
+            font-weight: 800;
+
+
+
+            letter-spacing: 2.5px;
+
+        }
+
+
+
+
+
+        .hero h1 {
+
+            margin: 0;
+
+
+
+            font-size: clamp(48px, 6vw, 82px);
+
+
+
+            line-height: 0.98;
+
+
+
+            letter-spacing: -3px;
+
+
+
+            text-transform: uppercase;
+
+        }
+
+
+
+
+
+        .hero h1 span {
+
+            color: var(--green);
+
+        }
+
+
+
+
+
+        .hero p {
+
+            max-width: 650px;
+
+
+
+            margin-top: 28px;
+
+
+
+            color: #294761;
+
+
+
+            font-size: 17px;
+
+
+
+            line-height: 1.75;
+
+        }
+
+
+
+
+
+        /* ================================
+
+           HERO BUTTONS
+
+        ================================= */
+
+
+
+        .hero-actions {
+
+            display: flex;
+
+
+
+            gap: 14px;
+
+
+
+            margin-top: 32px;
+
+
+
+            flex-wrap: wrap;
+
+        }
+
+
+
+
+
+        .hero-btn {
+
+            padding: 15px 27px;
+
+
+
+            border-radius: 30px;
+
+
+
+            font-size: 14px;
+
+
+
+            font-weight: 700;
+
+
+
+            border: 1.5px solid var(--green);
+
+        }
+
+
+
+
+
+        .hero-btn.primary {
+
+            background: var(--green-light);
+
+
+
+            color: #172300;
+
+
+
+            box-shadow:
+
+                0 8px 24px
+
+                rgba(141, 204, 24, 0.22);
+
+        }
+
+
+
+
+
+        .hero-btn.secondary {
+
+            background: white;
+
+
+
+            color: #203344;
+
+        }
+
+
+
+
+
+        /* ================================
+
+           STATUS
+
+        ================================= */
+
+
+
+        .status-row {
+
+            display: flex;
+
+
+
+            gap: 14px;
+
+
+
+            margin-top: 22px;
+
+
+
+            flex-wrap: wrap;
+
+        }
+
+
+
+
+
+        .status {
+
+            padding: 11px 18px;
+
+
+
+            border: 1px solid var(--green);
+
+
+
+            border-radius: 25px;
+
+
+
+            background: rgba(255,255,255,.85);
+
+
+
+            color: #263c4d;
+
+
+
+            font-size: 12px;
+
+
+
+            font-weight: 700;
+
+        }
+
+
+
+
+
+        .status-dot {
+
+            display: inline-block;
+
+
+
+            width: 8px;
+
+            height: 8px;
+
+
+
+            margin-right: 7px;
+
+
+
+            border-radius: 50%;
+
+
+
+            background: var(--green);
+
+        }
+
+
+
+
+
+        /* ================================
+
+           CHAT FLOATING BUTTON
+
+        ================================= */
+
+
+
+        .chat-toggle {
+
+            position: fixed;
+
+
+
+            right: 28px;
+
+            bottom: 24px;
+
+
+
+            width: 64px;
+
+            height: 64px;
+
+
+
+            border: 2px solid white;
+
+
+
+            border-radius: 50%;
+
+
+
+            background:
+
+                linear-gradient(
+
+                    145deg,
+
+                    #a7df1a,
+
+                    #7fbf0e
+
+                );
+
+
+
+            color: #172300;
+
+
+
+            font-size: 28px;
+
+
+
+            cursor: pointer;
+
+
+
+            box-shadow:
+
+                0 10px 30px
+
+                rgba(70, 100, 10, .25),
+
+
+
+                0 0 0 5px
+
+                rgba(141, 204, 24, .08);
+
+
+
+            z-index: 1000;
+
+
+
+            transition: .2s ease;
+
+        }
+
+
+
+
+
+        .chat-toggle:hover {
+
+            transform:
+
+                translateY(-3px)
+
+                scale(1.04);
+
+        }
+
+
+
+
+
+        /* ================================
+
+           CHAT WINDOW
+
+        ================================= */
+
+
+
+        .chat-box {
+
+            position: fixed;
+
+
+
+            right: 28px;
+
+            bottom: 100px;
+
+
+
+            width: 450px;
+
+
+
+            height:
+
+                min(
+
+                    690px,
+
+                    calc(100vh - 125px)
+
+                );
+
+
+
+            max-width:
+
+                calc(100vw - 28px);
+
+
+
+            background: #f9fcf4;
+
+
+
+            border:
+
+                1px solid #c9df91;
+
+
+
+            border-radius: 22px;
+
+
+
+            overflow: hidden;
+
+
+
+            display: none;
+
+
+
+            flex-direction: column;
+
+
+
+            box-shadow:
+
+                0 24px 65px
+
+                rgba(40, 65, 15, .28);
+
+
+
+            z-index: 999;
+
+        }
+
+
+
+
+
+        .chat-box.open {
+
+            display: flex;
+
+        }
+
+
+
+
+
+        /* ================================
+
+           CHAT HEADER
+
+        ================================= */
+
+
+
+        .chat-header {
+
+            flex-shrink: 0;
+
+
+
+            padding: 17px 18px;
+
+
+
+            display: flex;
+
+
+
+            align-items: center;
+
+
+
+            gap: 12px;
+
+
+
+            background:
+
+                linear-gradient(
+
+                    135deg,
+
+                    #9fda1b,
+
+                    #83c510
+
+                );
+
+
+
+            border-bottom:
+
+                1px solid #77ae0c;
+
+        }
+
+
+
+
+
+        .avatar {
+
+            width: 43px;
+
+            height: 43px;
+
+
+
+            flex-shrink: 0;
+
+
+
+            border-radius: 12px;
+
+
+
+            display: flex;
+
+
+
+            align-items: center;
+
+            justify-content: center;
+
+
+
+            background: white;
+
+
+
+            color: var(--green-dark);
+
+
+
+            font-size: 20px;
+
+
+
+            font-weight: 900;
+
+
+
+            box-shadow:
+
+                0 5px 15px
+
+                rgba(66, 91, 10, .15);
+
+        }
+
+
+
+
+
+        .header-text {
+
+            flex: 1;
+
+        }
+
+
+
+
+
+        .header-text strong {
+
+            display: block;
+
+
+
+            font-size: 15px;
+
+
+
+            color: #172300;
+
+        }
+
+
+
+
+
+        .header-text span {
+
+            display: flex;
+
+
+
+            align-items: center;
+
+
+
+            gap: 6px;
+
+
+
+            margin-top: 4px;
+
+
+
+            color: #314900;
+
+
+
+            font-size: 11px;
+
+        }
+
+
+
+
+
+        .online-dot {
+
+            width: 7px;
+
+            height: 7px;
+
+
+
+            border-radius: 50%;
+
+
+
+            background: #2d7d00;
+
+        }
+
+
+
+
+
+        .close-btn {
+
+            width: 32px;
+
+            height: 32px;
+
+
+
+            border: 0;
+
+
+
+            border-radius: 9px;
+
+
+
+            background:
+
+                rgba(255,255,255,.35);
+
+
+
+            color: #172300;
+
+
+
+            font-size: 21px;
+
+
+
+            cursor: pointer;
+
+        }
+
+
+
+
+
+        .close-btn:hover {
+
+            background:
+
+                rgba(255,255,255,.55);
+
+        }
+
+
+
+
+
+        /* ================================
+
+           CHAT BODY
+
+        ================================= */
+
+
+
+        .chat-body {
+
+            flex: 1;
+
+
+
+            min-height: 0;
+
+
+
+            overflow-y: auto;
+
+
+
+            padding: 17px;
+
+
+
+            color: var(--text);
+
+
+
+            scrollbar-width: thin;
+
+
+
+            scrollbar-color:
+
+                #b5d66c
+
+                transparent;
+
+        }
+
+
+
+
+
+        /* ================================
+
+           WELCOME MESSAGE
+
+        ================================= */
+
+
+
+        .welcome {
+
+            padding: 14px 15px;
+
+
+
+            margin-bottom: 14px;
+
+
+
+            border:
+
+                1px solid var(--border);
+
+
+
+            border-radius: 15px;
+
+
+
+            background: white;
+
+
+
+            color: #28445a;
+
+
+
+            line-height: 1.55;
+
+
+
+            font-size: 13px;
+
+
+
+            box-shadow:
+
+                0 4px 14px
+
+                rgba(68, 91, 20, .05);
+
+        }
+
+
+
+
+
+        .welcome strong {
+
+            color: var(--green-dark);
+
+        }
+
+
+
+
+
+        /* ================================
+
+           QUICK QUESTIONS
+
+        ================================= */
+
+
+
+        .quick-box {
+
+            padding: 15px;
+
+
+
+            border:
+
+                1px solid var(--border);
+
+
+
+            border-radius: 17px;
+
+
+
+            background:
+
+                linear-gradient(
+
+                    180deg,
+
+                    #ffffff,
+
+                    #f7fbea
+
+                );
+
+        }
+
+
+
+
+
+        .quick-heading {
+
+            display: flex;
+
+
+
+            align-items: center;
+
+
+
+            gap: 8px;
+
+
+
+            color: #304a16;
+
+
+
+            font-weight: 800;
+
+
+
+            font-size: 14px;
+
+        }
+
+
+
+
+
+        .quick-icon {
+
+            width: 29px;
+
+            height: 29px;
+
+
+
+            border-radius: 9px;
+
+
+
+            display: flex;
+
+
+
+            align-items: center;
+
+            justify-content: center;
+
+
+
+            background: #ecf8ce;
+
+
+
+            color: var(--green-dark);
+
+
+
+            font-weight: 900;
+
+        }
+
+
+
+
+
+        .quick-subtitle {
+
+            margin:
+
+                6px 0 14px 37px;
+
+
+
+            color: var(--muted);
+
+
+
+            font-size: 11px;
+
+        }
+
+
+
+
+
+        .quick-questions {
+
+            display: grid;
+
+
+
+            grid-template-columns:
+
+                1fr 1fr;
+
+
+
+            gap: 9px;
+
+        }
+
+
+
+
+
+        .quick-question {
+
+            min-height: 48px;
+
+
+
+            padding: 9px 11px;
+
+
+
+            border:
+
+                1px solid #b9d976;
+
+
+
+            border-radius: 12px;
+
+
+
+            background: white;
+
+
+
+            color: #31540b;
+
+
+
+            font-size: 11.5px;
+
+
+
+            line-height: 1.35;
+
+
+
+            text-align: left;
+
+
+
+            cursor: pointer;
+
+
+
+            transition: .18s ease;
+
+        }
+
+
+
+
+
+        .quick-question:hover {
+
+            background: #f2f9df;
+
+
+
+            border-color: var(--green);
+
+
+
+            transform:
+
+                translateY(-1px);
+
+        }
+
+
+
+
+
+        /* ================================
+
+           LATEST QUESTION + ANSWER
+
+        ================================= */
+
+
+
+        .messages {
+
+            display: flex;
+
+
+
+            flex-direction: column;
+
+
+
+            gap: 10px;
+
+
+
+            margin-top: 15px;
+
+
+
+            padding-bottom: 6px;
+
+        }
+
+
+
+
+
+        .user-message {
+
+            align-self: flex-end;
+
+
+
+            max-width: 88%;
+
+
+
+            padding: 11px 13px;
+
+
+
+            border-radius:
+
+                15px
+
+                15px
+
+                5px
+
+                15px;
+
+
+
+            background: #eaf7cf;
+
+
+
+            border:
+
+                1px solid #c8e78c;
+
+
+
+            color: #35520e;
+
+
+
+            font-size: 13px;
+
+
+
+            line-height: 1.45;
+
+        }
+
+
+
+
+
+        .bot-message {
+
+            align-self: flex-start;
+
+
+
+            max-width: 92%;
+
+
+
+            padding: 13px 14px;
+
+
+
+            border-radius:
+
+                15px
+
+                15px
+
+                15px
+
+                5px;
+
+
+
+            background: white;
+
+
+
+            border:
+
+                1px solid var(--border);
+
+
+
+            color: #29445a;
+
+
+
+            font-size: 13px;
+
+
+
+            line-height: 1.6;
+
+
+
+            box-shadow:
+
+                0 4px 12px
+
+                rgba(68, 91, 20, .06);
+
+
+
+            white-space: pre-line;
+
+        }
+
+
+
+
+
+        .answer-label {
+
+            display: block;
+
+
+
+            margin-bottom: 5px;
+
+
+
+            color: var(--green-dark);
+
+
+
+            font-size: 10px;
+
+
+
+            font-weight: 800;
+
+
+
+            letter-spacing: .8px;
+
+
+
+            text-transform: uppercase;
+
+        }
+
+
+
+
+
+        /* ================================
+
+           INPUT AREA
+
+        ================================= */
+
+
+
+        .chat-input-area {
+
+            flex-shrink: 0;
+
+
+
+            display: flex;
+
+
+
+            gap: 8px;
+
+
+
+            padding: 12px;
+
+
+
+            background: white;
+
+
+
+            border-top:
+
+                1px solid var(--border);
+
+        }
+
+
+
+
+
+        .chat-input {
+
+            flex: 1;
+
+
+
+            min-width: 0;
+
+
+
+            height: 43px;
+
+
+
+            padding:
+
+                0 13px;
+
+
+
+            border:
+
+                1px solid #c9d9b1;
+
+
+
+            border-radius: 11px;
+
+
+
+            outline: none;
+
+
+
+            font-size: 13px;
+
+
+
+            color: var(--text);
+
+        }
+
+
+
+
+
+        .chat-input:focus {
+
+            border-color:
+
+                var(--green);
+
+
+
+            box-shadow:
+
+                0 0 0 3px
+
+                rgba(141, 204, 24, .12);
+
+        }
+
+
+
+
+
+        .send-btn {
+
+            height: 43px;
+
+
+
+            padding:
+
+                0 18px;
+
+
+
+            border: 0;
+
+
+
+            border-radius: 11px;
+
+
+
+            background:
+
+                var(--green);
+
+
+
+            color: #172300;
+
+
+
+            font-weight: 800;
+
+
+
+            cursor: pointer;
+
+        }
+
+
+
+
+
+        .send-btn:hover {
+
+            background:
+
+                var(--green-light);
+
+        }
+
+
+
+
+
+        /* ================================
+
+           MOBILE
+
+        ================================= */
+
+
+
+        @media (max-width: 600px) {
+
+
+
+            .hero {
+
+                padding:
+
+                    45px 22px;
+
+            }
+
+
+
+
+
+            .hero h1 {
+
+                letter-spacing: -2px;
+
+            }
+
+
+
+
+
+            .chat-box {
+
+                right: 10px;
+
+
+
+                bottom: 84px;
+
+
+
+                width:
+
+                    calc(100vw - 20px);
+
+
+
+                height:
+
+                    calc(100vh - 105px);
+
+            }
+
+
+
+
+
+            .chat-toggle {
+
+                right: 15px;
+
+
+
+                bottom: 15px;
+
+            }
+
+
+
+
+
+            .quick-questions {
+
+                grid-template-columns: 1fr;
+
+            }
+
+
+
+        }
+
+
+
+    </style>
+
+</head>
+
+
+
+
+
+<body>
+
+
+
+
+
+    <!-- =================================
+
+         MAIN AMOEBATRONIX PAGE
+
+    ================================== -->
+
+
+
+    <section class="hero">
+
+
+
+        <div class="hero-content">
+
+
+
+            <div class="brand-line">
+
+                XPERIENCE. XPERTS. XCELLENCE.
+
+            </div>
+
+
+
+
+
+            <h1>
+
+                WE BUILD<br>
+
+                WHAT'S <span>NEXT</span>
+
+            </h1>
+
+
+
+
+
+            <p>
+
+                A leading IT, Media & Event Solutions company
+
+                delivering innovative, technical and sustainable
+
+                solutions that drive your business forward.
+
+            </p>
+
+
+
+
+
+            <div class="hero-actions">
+
+
+
+                <div class="hero-btn primary">
+
+                    Explore Our Solutions →
+
+                </div>
+
+
+
+                <div class="hero-btn secondary">
+
+                    Talk to an Expert →
+
+                </div>
+
+
+
+            </div>
+
+
+
+
+
+            <div class="status-row">
+
+
+
+                <div class="status">
+
+
+
+                    <span class="status-dot"></span>
+
+
+
+                    SYSTEM STATUS &nbsp; ONLINE
+
+
+
+                </div>
+
+
+
+
+
+                <div class="status">
+
+
+
+                    ✦ &nbsp; 10+ YEARS OF XCELLENCE
+
+
+
+                </div>
+
+
+
+            </div>
+
+
+
+        </div>
+
+
+
+    </section>
+
+
+
+
+
+
+
+    <!-- =================================
+
+         FLOATING CHAT BUTTON
+
+    ================================== -->
+
+
+
+    <button
+
+        class="chat-toggle"
+
+        id="chatToggle"
+
+        aria-label="Open AmoebaTronix Assistant"
+
+    >
+
+        💬
+
+    </button>
+
+
+
+
+
+
+
+    <!-- =================================
+
+         CHAT WINDOW
+
+    ================================== -->
+
+
+
+    <div
+
+        class="chat-box"
+
+        id="chatBox"
+
+    >
+
+
+
+
+
+        <!-- CHAT HEADER -->
+
+
+
+        <div class="chat-header">
+
+
+
+            <div class="avatar">
+
+                A
+
+            </div>
+
+
+
+
+
+            <div class="header-text">
+
+
+
+                <strong>
+
+                    AmoebaTronix Assistant
+
+                </strong>
+
+
+
+                <span>
+
+
+
+                    <i class="online-dot"></i>
+
+
+
+                    Usually replies instantly
+
+
+
+                </span>
+
+
+
+            </div>
+
+
+
+
+
+            <button
+
+                class="close-btn"
+
+                id="closeChat"
+
+                aria-label="Close chat"
+
+            >
+
+                ×
+
+            </button>
+
+
+
+        </div>
+
+
+
+
+
+
+
+        <!-- CHAT BODY -->
+
+
+
+        <div
+
+            class="chat-body"
+
+            id="chatBody"
+
+        >
+
+
+
+
+
+            <!-- WELCOME -->
+
+
+
+            <div class="welcome">
+
+
+
+                <strong>
+
+                    Hi! 👋
+
+                </strong>
+
+
+
+                <br>
+
+
+
+                I'm the AmoebaTronix Assistant.
+
+
+
+                Ask me about our IT services,
+
+                software, cloud solutions,
+
+                products, licences, or event services.
+
+
+
+            </div>
+
+
+
+
+
+
+
+            <!-- QUICK QUESTIONS -->
+
+
+
+            <div class="quick-box">
+
+
+
+                <div class="quick-heading">
+
+
+
+                    <div class="quick-icon">
+
+                        ✦
+
+                    </div>
+
+
+
+                    Quick Questions
+
+
+
+                </div>
+
+
+
+
+
+                <div class="quick-subtitle">
+
+
+
+                    Select a question or type your own below.
+
+
+
+                </div>
+
+
+
+
+
+                <div
+
+                    class="quick-questions"
+
+                    id="quickQuestions"
+
+                ></div>
+
+
+
+            </div>
+
+
+
+
+
+
+
+            <!--
+
+                ONLY THE LATEST QUESTION
+
+                AND ANSWER WILL APPEAR HERE
+
+            -->
+
+
+
+            <div
+
+                class="messages"
+
+                id="messages"
+
+            ></div>
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+        <!-- INPUT -->
+
+
+
+        <div class="chat-input-area">
+
+
+
+            <input
+
+                id="questionInput"
+
+                class="chat-input"
+
+                type="text"
+
+                placeholder="Ask about AmoebaTronix..."
+
+                autocomplete="off"
+
+            >
+
+
+
+
+
+            <button
+
+                id="sendButton"
+
+                class="send-btn"
+
+            >
+
+                Send
+
+            </button>
+
+
+
+        </div>
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+    <!-- =================================
+
+         JAVASCRIPT
+
+    ================================== -->
+
+
+
+    <script>
+
+
+
+
+
+        /* =================================
+
+           COMPANY FAQ
+
+        ================================== */
+
+
+
+        const faq = [
+
+
+
+            {
+
+                question: "What does AmoebaTronix do?",
+
+
+
+                answer:
+
+                "AmoebaTronix provides IT services, custom software, cloud solutions, enterprise products, software licences, event staging, media production, and event support."
+
+            },
+
+
+
+
+
+            {
+
+                question: "Where is AmoebaTronix located?",
+
+
+
+                answer:
+
+                "Our headquarters is at No. 32, Somasundaram Street, Om Shakthi Nagar Extension, Nemilichery, Chromepet, Chennai – 600044."
+
+            },
+
+
+
+
+
+            {
+
+                question: "What are your business hours?",
+
+
+
+                answer:
+
+                "Our business hours are Monday to Saturday, 10:00 AM to 7:00 PM IST."
+
+            },
+
+
+
+
+
+            {
+
+                question: "How can I contact AmoebaTronix?",
+
+
+
+                answer:
+
+                "Call +91 9710 403 577 or +91 9841 497 210. You can also email admin@amoebatronix.com."
+
+            },
+
+
+
+
+
+            {
+
+                question: "Do you provide support services?",
+
+
+
+                answer:
+
+                "Yes. We provide IT support, remote assistance, on-site support, infrastructure management, and ongoing service support."
+
+            },
+
+
+
+
+
+            {
+
+                question: "What IT services do you provide?",
+
+
+
+                answer:
+
+                "We provide IT infrastructure, networking, security, hardware support, AMC, Facility Management Services, remote support, on-site support, and IT management."
+
+            },
+
+
+
+
+
+            {
+
+                question: "What is AMC?",
+
+
+
+                answer:
+
+                "AMC means Annual Maintenance Contract. It includes scheduled servicing, preventive checks, and breakdown support for IT hardware and infrastructure."
+
+            },
+
+
+
+
+
+            {
+
+                question: "What is FMS?",
+
+
+
+                answer:
+
+                "Facility Management Services provides dedicated engineers for day-to-day IT operations, helpdesk support, network management, and asset tracking."
+
+            },
+
+
+
+
+
+            {
+
+                question: "Do you provide remote and on-site support?",
+
+
+
+                answer:
+
+                "Yes. We can provide remote assistance as well as on-site engineering support."
+
+            },
+
+
+
+
+
+            {
+
+                question: "Can you support multiple office locations?",
+
+
+
+                answer:
+
+                "Yes. We can support multi-location offices and help manage IT systems across branches."
+
+            },
+
+
+
+
+
+            {
+
+                question: "Do you provide networking solutions?",
+
+
+
+                answer:
+
+                "Yes. We provide enterprise routers, managed switches, Wi-Fi access points, firewalls, VPN solutions, structured cabling, and CCTV solutions."
+
+            },
+
+
+
+
+
+            {
+
+                question: "Can you help with server and IT infrastructure setup?",
+
+
+
+                answer:
+
+                "Yes. We can support server deployments, workstations, networking, storage, security, and business IT infrastructure."
+
+            },
+
+
+
+
+
+            {
+
+                question: "Do you build custom software?",
+
+
+
+                answer:
+
+                "Yes. We build custom software, web applications, cloud solutions, APIs, and business systems based on your requirements."
+
+            },
+
+
+
+
+
+            {
+
+                question: "Can you integrate software with our existing ERP or CRM?",
+
+
+
+                answer:
+
+                "Yes. We can help plan and build API integrations with existing business systems, ERPs, and CRMs."
+
+            },
+
+
+
+
+
+            {
+
+                question: "Do you provide cloud solutions?",
+
+
+
+                answer:
+
+                "Yes. We provide Google Workspace, Microsoft Azure, cloud backup, virtual infrastructure, migration, and cloud-security solutions."
+
+            },
+
+
+
+
+
+            {
+
+                question: "Can you help with Google Workspace setup?",
+
+
+
+                answer:
+
+                "Yes. We provide Google Workspace setup, migration, and business email support."
+
+            },
+
+
+
+
+
+            {
+
+                question: "Can you help with Microsoft Azure services?",
+
+
+
+                answer:
+
+                "Yes. We provide Microsoft Azure cloud services and virtual-machine solutions."
+
+            },
+
+
+
+
+
+            {
+
+                question: "Do you provide software maintenance after launch?",
+
+
+
+                answer:
+
+                "Yes. We can provide maintenance, bug-fix support, and ongoing improvements after software launch."
+
+            },
+
+
+
+
+
+            {
+
+                question: "What IT products do you provide?",
+
+
+
+                answer:
+
+                "We provide servers, workstations, business laptops, network printers, UPS systems, motherboards, graphic cards, server RAM, NVMe storage, switches, routers, firewalls, and cabling."
+
+            },
+
+
+
+
+
+            {
+
+                question: "Do you provide genuine software licences?",
+
+
+
+                answer:
+
+                "Yes. We provide genuine licences for Windows, Windows Server, Microsoft 365, Microsoft Office, and security software."
+
+            },
+
+
+
+
+
+            {
+
+                question: "Can you help choose the right hardware for my business?",
+
+
+
+                answer:
+
+                "Yes. Share your business requirement, number of users, applications, and budget. Our team can recommend suitable products."
+
+            },
+
+
+
+
+
+            {
+
+                question: "Do you provide hardware firewalls and CCTV solutions?",
+
+
+
+                answer:
+
+                "Yes. We provide hardware firewalls, VPN-capable security solutions, IP CCTV surveillance, and network infrastructure."
+
+            },
+
+
+
+
+
+            {
+
+                question: "What event services do you provide?",
+
+
+
+                answer:
+
+                "We provide corporate-event support, stage and set design, LED walls, lighting, audio-visual production, 360 video booths, mascot rentals, and event staging."
+
+            },
+
+
+
+
+
+            {
+
+                question: "Do you manage corporate events?",
+
+
+
+                answer:
+
+                "Yes. We support corporate summits, conventions, technology expos, media events, and brand activations."
+
+            },
+
+
+
+
+
+            {
+
+                question: "Can I rent a mascot separately?",
+
+
+
+                answer:
+
+                "Yes. Mascot costumes and event props can be requested separately, subject to availability."
+
+            },
+
+
+
+
+
+            {
+
+                question: "Do you provide 360 video booth rentals?",
+
+
+
+                answer:
+
+                "Yes. We provide 360 video booth rental solutions for events and brand activations."
+
+            },
+
+
+
+
+
+            {
+
+                question: "Can you provide LED walls, stage lighting, and audio?",
+
+
+
+                answer:
+
+                "Yes. We provide LED video walls, stage setups, lighting design, and audio-visual production."
+
+            },
+
+
+
+
+
+            {
+
+                question: "How do I request an event quotation?",
+
+
+
+                answer:
+
+                "Please share the event date, venue, expected audience size, required services, and approximate budget. Our team will help prepare a suitable package."
+
+            }
+
+
+
+        ];
+
+
+
+
+
+
+
+        /* =================================
+
+           GET HTML ELEMENTS
+
+        ================================== */
+
+
+
+        const chatToggle =
+
+            document.getElementById("chatToggle");
+
+
+
+
+
+        const chatBox =
+
+            document.getElementById("chatBox");
+
+
+
+
+
+        const closeChat =
+
+            document.getElementById("closeChat");
+
+
+
+
+
+        const chatBody =
+
+            document.getElementById("chatBody");
+
+
+
+
+
+        const messages =
+
+            document.getElementById("messages");
+
+
+
+
+
+        const quickQuestionsContainer =
+
+            document.getElementById("quickQuestions");
+
+
+
+
+
+        const questionInput =
+
+            document.getElementById("questionInput");
+
+
+
+
+
+        const sendButton =
+
+            document.getElementById("sendButton");
+
+
+
+
+
+
+
+        /* =================================
+
+           CREATE QUICK QUESTIONS
+
+        ================================== */
+
+
+
+        const quickQuestions =
+
+            faq.slice(0, 10);
+
+
+
+
+
+        quickQuestions.forEach(item => {
+
+
+
+            const button =
+
+                document.createElement("button");
+
+
+
+
+
+            button.className =
+
+                "quick-question";
+
+
+
+
+
+            button.textContent =
+
+                item.question;
+
+
+
+
+
+            button.addEventListener(
+
+                "click",
+
+                function () {
+
+
+
+                    showAnswer(
+
+                        item.question
+
+                    );
+
+
+
+                }
+
+            );
+
+
+
+
+
+            quickQuestionsContainer.appendChild(
+
+                button
+
+            );
+
+
+
+        });
+
+
+
+
+
+
+
+        /* =================================
+
+           FIND ANSWER
+
+        ================================== */
+
+
+
+        function findAnswer(userQuestion) {
+
+
+
+            const question =
+
+                userQuestion
+
+                    .toLowerCase()
+
+                    .trim();
+
+
+
+
+
+            /* Exact question */
+
+
+
+            const exact =
+
+                faq.find(
+
+                    item =>
+
+                    item.question
+
+                        .toLowerCase()
+
+                        .trim()
+
+                    === question
+
+                );
+
+
+
+
+
+            if (exact) {
+
+
+
+                return exact.answer;
+
+
+
+            }
+
+
+
+
+
+
+
+            /* Keyword matching */
+
+
+
+            const words =
+
+                question
+
+                    .replace(/[?.,!]/g, "")
+
+                    .split(/\s+/)
+
+                    .filter(
+
+                        word =>
+
+                        word.length > 3
+
+                    );
+
+
+
+
+
+            let bestMatch = null;
+
+
+
+            let bestScore = 0;
+
+
+
+
+
+
+
+            faq.forEach(item => {
+
+
+
+                const faqWords =
+
+                    item.question
+
+                        .toLowerCase()
+
+                        .replace(/[?.,!]/g, "")
+
+                        .split(/\s+/)
+
+                        .filter(
+
+                            word =>
+
+                            word.length > 3
+
+                        );
+
+
+
+
+
+                let score = 0;
+
+
+
+
+
+                words.forEach(word => {
+
+
+
+                    if (
+
+                        faqWords.includes(word)
+
+                    ) {
+
+
+
+                        score++;
+
+
+
+                    }
+
+
+
+                });
+
+
+
+
+
+                if (
+
+                    score > bestScore
+
+                ) {
+
+
+
+                    bestScore = score;
+
+
+
+                    bestMatch = item;
+
+
+
+                }
+
+
+
+            });
+
+
+
+
+
+
+
+            if (
+
+                bestMatch &&
+
+                bestScore >= 2
+
+            ) {
+
+
+
+                return bestMatch.answer;
+
+
+
+            }
+
+
+
+
+
+
+
+            return (
+
+                "I can help with AmoebaTronix services, " +
+
+                "IT services, software development, " +
+
+                "cloud solutions, products, licences, " +
+
+                "and event services. Please choose " +
+
+                "a quick question or describe what you need."
+
+            );
+
+
+
+        }
+
+
+
+
+
+
+
+        /* =================================
+
+           SHOW ANSWER
+
+        ================================== */
+
+
+
+        async function showAnswer(question) {
+
+            /* REMOVE THE PREVIOUS QUESTION AND ANSWER */
+            messages.innerHTML = "";
+
+            /* USER QUESTION */
+            const userMessage = document.createElement("div");
+            userMessage.className = "user-message";
+            userMessage.textContent = question;
+
+            /* BOT ANSWER */
+            const botMessage = document.createElement("div");
+            botMessage.className = "bot-message";
+
+            const label = document.createElement("span");
+            label.className = "answer-label";
+            label.textContent = "AmoebaTronix Assistant";
+            botMessage.appendChild(label);
+
+            const contentNode = document.createElement("div");
+            contentNode.className = "answer-text";
+            contentNode.textContent = "Searching knowledge base...";
+            botMessage.appendChild(contentNode);
+
+            /* ADD TO CHAT */
+            messages.appendChild(userMessage);
+            messages.appendChild(botMessage);
+
+            /* SCROLL */
+            chatBody.scrollTo({
+                top: chatBody.scrollHeight,
+                behavior: "smooth"
+            });
+
+            /* FETCH REAL ANSWER FROM FASTAPI RAG BACKEND */
+            try {
+                const apiUrl = window.location.origin.startsWith("http")
+                    ? `${window.location.origin}/ask`
+                    : "http://127.0.0.1:8000/ask";
+
+                const response = await fetch(apiUrl, {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify({ question: question })
+                });
+
+                if (response.ok) {
+                    const data = await response.json();
+                    if (data && data.answer) {
+                        contentNode.textContent = data.answer;
+                    } else {
+                        contentNode.textContent = findAnswer(question);
+                    }
+                } else {
+                    contentNode.textContent = findAnswer(question);
+                }
+            } catch (err) {
+                console.warn("Backend not reached, using offline fallback:", err);
+                contentNode.textContent = findAnswer(question);
+            }
+
+            setTimeout(function () {
+                chatBody.scrollTo({
+                    top: chatBody.scrollHeight,
+                    behavior: "smooth"
+                });
+            }, 100);
+
+        }
+
+        /* =================================
+
+           SEND QUESTION
+
+        ================================== */
+
+
+
+        function sendQuestion() {
+
+
+
+            const question =
+
+                questionInput.value.trim();
+
+
+
+
+
+            if (!question) {
+
+
+
+                return;
+
+
+
+            }
+
+
+
+
+
+            showAnswer(question);
+
+
+
+
+
+            questionInput.value = "";
+
+
+
+
+
+            questionInput.focus();
+
+
+
+        }
+
+
+
+
+
+
+
+        /* =================================
+
+           OPEN CHAT
+
+        ================================== */
+
+
+
+        chatToggle.addEventListener(
+
+            "click",
+
+            function () {
+
+
+
+                chatBox.classList.add(
+
+                    "open"
+
+                );
+
+
+
+
+
+                questionInput.focus();
+
+
+
+            }
+
+        );
+
+
+
+
+
+
+
+        /* =================================
+
+           CLOSE CHAT
+
+        ================================== */
+
+
+
+        closeChat.addEventListener(
+
+            "click",
+
+            function () {
+
+
+
+                chatBox.classList.remove(
+
+                    "open"
+
+                );
+
+
+
+            }
+
+        );
+
+
+
+
+
+
+
+        /* =================================
+
+           SEND BUTTON
+
+        ================================== */
+
+
+
+        sendButton.addEventListener(
+
+            "click",
+
+            sendQuestion
+
+        );
+
+
+
+
+
+
+
+        /* =================================
+
+           ENTER KEY
+
+        ================================== */
+
+
+
+        questionInput.addEventListener(
+
+            "keydown",
+
+            function (event) {
+
+
+
+                if (
+
+                    event.key === "Enter"
+
+                ) {
+
+
+
+                    event.preventDefault();
+
+
+
+                    sendQuestion();
+
+
+
+                }
+
+
+
+            }
+
+        );
+
+
+
+    </script>
+
+
+
+</body>
+
+</html>
